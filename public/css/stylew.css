@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*~~~~~~DISEÑO DISPOSITIVO MOVIL~~~~~~~~~~*/
+@media (max-width: 500px) {
+  .bodyPrin .mainPrincipal .quienesSomos {
+    padding: 3%;
+    margin: 3%;
+  }
+  .bodyPrin .mainPrincipal .quienesSomos .imagen {
+    width: 100%;
+  }
+  .bodyPrin .mainPrincipal .quienesSomos .imagen h2 {
+    top: 18%;
+    right: 20%;
+    rotate: 350deg;
+    font-weight: 100;
+    font-size: 30px;
+  }
+  .bodyPrin .mainPrincipal .quienesSomos .imagen img {
+    width: 100%;
+    border-radius: 3%;
+    margin-bottom: 2em;
+  }
+  .bodyPrin .mainPrincipal .quienesSomos .presentacion {
+    padding: 0 3% 5% 3%;
+  }
+  .bodyPrin .mainPrincipal .quienesSomos .presentacion h2 {
+    margin-bottom: 1em;
+  }
+  .bodyPrin .mainPrincipal .categorias {
+    margin: 10% 3%;
+    padding: 3%;
+  }
+  .bodyPrin .mainPrincipal .categorias .tarjeta img {
+    width: 96%;
+    margin-left: 2%;
+  }
+}
+/*~~~~~~~~~~~~~~~~~~~~DETAIL~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.bodyDet .productMain .producto {
+  padding: 5% 3% 10% 3%;
+  margin: 3%;
+}
+.bodyDet .productMain .producto .imgMuestra img {
+  width: 95%;
+  margin: 2% 2% 10% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bodyDet .productMain .producto .precio h2 {
+  margin-top: 5%;
+}
+.bodyDet .productMain .producto .precio .añadir {
+  padding: 5%;
+  border-radius: 5%;
+  margin-top: 5%;
+}
+.bodyDet .productMain .derecha {
+  padding: 5% 3% 10% 3%;
+  margin: 3%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~CARRITO~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.bodyCart .cartMain {
+  padding: 5% 3% 10% 3%;
+  margin: 3%;
+}
+.bodyCart .cartMain .añadidos .tarjetas {
+  margin-top: 3%;
+  padding: 3%;
+  align-items: center;
+  gap: 5%;
+  padding-right: 10%;
+}
+.bodyCart .cartMain .añadidos .tarjetas .eliminar {
+  padding-left: 5%;
+}
+.bodyCart .cartMain .añadidos .tarjetas .eliminar img {
+  width: 20px;
+}
+.bodyCart .cartMain .añadidos .tarjetas img {
+  width: 30%;
+}
+.bodyCart .cartMain .añadidos h3 {
+  margin-top: 5%;
+}
+
+/*~~~~~~MOVIL GENERAL~~~~~~~~~~*/
+body{
+  width: 100%;
+}
+.bodyGen {
+  background-image: url(/imagenes/fondo.jpg);
+}
+.bodyGen .headerGen {
+  height: 60px;
+}
+.bodyGen .headerGen .nombre {
+  width: 150px;
+}
+.bodyGen .headerGen .logo {
+  width: 30%;
+  height: 60%;
+}
+.bodyGen .headerGen ul {
+  display: none;
+}
+.bodyGen footer {
+  padding: 3%;
+}
+.bodyGen footer .footIzq img {
+  width: 20%;
+  height: 90%;
+}
+.bodyGen footer .footDer img {
+  width: 20%;
+}
+.bodyGen footer .footIzq, .bodyGen footer .footDer {
+  display: flex;
+  align-items: center;
+}
+.bodyGen footer .footIzq ul, .bodyGen footer .footDer ul {
+  display: flex;
+  gap: 10%;
+}
+
+/*~~~~~~DISEÑO DISPOSITIVO TABLETA~~~~~~~~~~*/
+@media (min-width: 500px) {
+  .bPrincipal {
+    background-image: url(imagenes/fondo2.jpg);
+  }
+  .bPrincipal .hPrincipal .nombre {
+    width: 250px;
+  }
+}
+/*~~~~~~DISEÑO DISPOSITIVO DESKTOP~~~~~~~~~~*/
+:root {
+  --principal:#764922;
+  --secundario:#cdb6a28a;
+  --blanco:#D9D9D9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ESTILOS PAGINA PRINCIPAL */
+.bodyPrin .mainPrincipal .quienesSomos {
+  background-color: var(--secundario);
+  border-radius: 2%;
+}
+.bodyPrin .mainPrincipal .quienesSomos .imagen h2 {
+  color: white;
+  position: absolute;
+  text-decoration: underline 2px solid white;
+  font-family: "Kaushan Script", cursive;
+}
+.bodyPrin .mainPrincipal .categorias {
+  background-color: var(--secundario);
+  border-radius: 3%;
+}
+.bodyPrin .mainPrincipal .categorias .tarjeta {
+  padding: 3%;
+  background-color: var(--blanco);
+  border-radius: 3%;
+  margin-bottom: 5%;
+}
+.bodyPrin .mainPrincipal .categorias .tarjeta h2 {
+  margin: 2%;
+}
+.bodyPrin .mainPrincipal .categorias .tarjeta p {
+  color: gray;
+  padding: 3%;
+}
+.bodyPrin .mainPrincipal .categorias .tarjeta h3 {
+  text-decoration: underline solid 2px black;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~DETAIL~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.bodyDet .productMain {
+  max-width: 100%;
+}
+.bodyDet .productMain .producto {
+  background-color: var(--secundario);
+  border-radius: 2%;
+}
+.bodyDet .productMain .producto img {
+  border-radius: 2%;
+}
+.bodyDet .productMain .producto .botonera {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10%;
+}
+.bodyDet .productMain .producto .botonera .añadir {
+  background-color: var(--principal);
+  border: 1px solid black;
+  text-decoration: underline solid black;
+}
+.bodyDet .productMain .derecha {
+  background-color: var(--secundario);
+  border-radius: 2%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~CARRITO~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.bodyCart .cartMain {
+  background-color: var(--secundario);
+  border-radius: 2%;
+}
+.bodyCart .cartMain .añadidos .tarjetas {
+  background-color: var(--blanco);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~GENERALES~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.bodyGen {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bodyGen .headerGen {
+  /* header */
+  background-color: var(--principal);
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+}
+.bodyGen .headerGen .logo {
+  padding: 3%;
+}
+.bodyGen .headerGen .nombre {
+  position: absolute;
+  padding-top: 1%;
+  left: 30%;
+}
+.bodyGen footer {
+  background-color: var(--principal);
+  padding: 3%;
+  position: relative;
+  bottom: 0px;
+}
+.bodyGen footer .footIzq ul {
+  list-style: none;
+}
+.bodyGen footer .footIzq ul a {
+  text-decoration: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.register form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register form .subContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+.register form .subContainer .subSubContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/*# sourceMappingURL=stylew.css.map */
