@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | AlpaGourmet</title>
+    <link rel="stylesheet" href="/css/stylew.css">
+</head>
+<body class="bodyCart bodyGen">
+    <header class="headerGen"> <%- include("./partials/header.ejs") %> </header>
+
+
+<main class="cartMain">
+    <div class="carrito">
+        <h2>Tu carrito:</h2>
+
+        <div class="añadidos">
+            <div class="tarjetas">
+                <img src="imagenes/utensillos/cuchillo.jpg" alt="Imagen de muestra de cuchillo">
+                <h3>Cuchillo santoku</h3>
+                <a class="eliminar"><img src="imagenes/delete.svg" alt="boton para eliminar producto"></a>
+                <h4>$5000</h4>
+            </div>
+            <div class="tarjetas">
+                <img src="imagenes/utensillos/cucharon.jpg" alt="Imagen de muestra de utensillos">
+                <h3>Cucharon</h3>
+                <a class="eliminar"><img src="imagenes/delete.svg" alt="boton para eliminar producto"></a>
+                <h4>$1000</h4>
+            </div>
+            <div class="tarjetas">
+                <img src="imagenes/ollas/ollateflon.jpg" alt="Imagen de muestra de ollas">
+                <h3>Olla essen</h3>
+                <a class="eliminar"><img src="imagenes/delete.svg" alt="boton para eliminar producto"></a>
+                <h4>$19000</h4>
+            </div>
+            <div class="tarjetas">
+                <img src="imagenes/otros/rallador.jpg" alt="Imagen de muestra de cuchillo">
+                <h3>Rallador </h3>
+                <a class="eliminar"><img src="imagenes/delete.svg" alt="boton para eliminar producto"></a>
+                <h4>$3000</h4>
+            </div>
+            <h3>Total: $28000</h3>
+
+        </div>
+    </div>
+
+
+
+
+</main>
+
+
+
+<footer>
+    <%- include("./partials/footer.ejs") %>
+</footer>
+
+
+    
+</body>
+</html>
