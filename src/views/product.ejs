@@ -7,24 +7,12 @@
     <title>Product | AlpaGourmet</title>
 </head>
 <body class="bodyDet bodyGen">
-    <header class="headerGen">
-        <a href="index.html"><img class="logo" src="imagenes/logo.png" alt="Logo de la empresa"></a>
-        <img class="nombre" src="imagenes/nombre.png" alt="Alpa gourmet">
-    <nav class="navPrincipal">
-        <ul>
-            <li><a href="">Categorias</a></li>
-            <li><a href="">Sobre nosotros</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">Recetas</a></li>
-        </ul>
-    </nav>
-
-</header>
+    <header class="headerGen"> <%- include("./partials/header.ejs") %> </header>
 
 <main class="productMain">
     <div class="producto">
         <div class="imgMuestra">
-            <img src="imagenes/cuchillo.jpg" alt="Imagen de muestra de cuchillo">
+            <img src="imagenes/utensillos/cuchillo.jpg" alt="Imagen de muestra de cuchillo">
         </div>
         <div class="precio">
             <h2 class="">Cuchillo santoku 7 pulgadas</h2>
@@ -59,20 +47,7 @@
 </main>
 
 <footer>
-    <div class="footIzq">
-        <img class="gourmet" src="imagenes/logo.png" alt="Logo de la empresa">
-        <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Email</a></li>
-            <li><a href="">GitHub</a></li>
-            <li><a href="">Linkedin</a></li>
-        </ul>
-    </div>
-
-    <div class="footDer">
-        <p>Copyright © y todos los derechos  de autor, 2023, reservados a AlpaDev Cordoba, Argentina 2023</p>
-        <img class="alpaimg" src="imagenes/alpa.png" alt="Logo de alpa dev">
-    </div>
+    <%- include("./partials/footer.ejs") %>
 </footer>
 </body>
 </html>

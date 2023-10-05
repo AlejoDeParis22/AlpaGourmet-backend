@@ -85,12 +85,44 @@
   margin-top: 5%;
 }
 
-/*~~~~~~MOVIL GENERAL~~~~~~~~~~*/
-body{
+/*~~~~~~~~~~~~~~~~~~~~LOGIN~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.bodyGen .login {
   width: 100%;
+  height: 100%;
 }
+.bodyGen .login .container {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secundario);
+  margin: 10%;
+  height: 80%;
+  border-radius: 3%;
+}
+.bodyGen .login .container label {
+  font-weight: 500;
+  font-size: 20px;
+}
+.bodyGen .login .container h2, .bodyGen .login .container button {
+  text-align: center;
+}
+.bodyGen .login .container form {
+  margin-top: 10%;
+}
+.bodyGen .login .container form input, .bodyGen .login .container form button {
+  margin: 6% 0%;
+}
+.bodyGen .login .container .opciones {
+  margin-top: 15%;
+  text-align: center;
+}
+.bodyGen .login .container .opciones a {
+  color: black;
+}
+
+/*~~~~~~MOVIL GENERAL~~~~~~~~~~*/
 .bodyGen {
-  background-image: url(/imagenes/fondo.jpg);
+  background-image: url(../imagenes/fondo.jpg);
 }
 .bodyGen .headerGen {
   height: 60px;
@@ -176,6 +208,10 @@ body{
 .bodyPrin .mainPrincipal .categorias .tarjeta h3 {
   text-decoration: underline solid 2px black;
 }
+.bodyPrin .mainPrincipal footer {
+  position: relative;
+  bottom: 0px;
+}
 
 /*~~~~~~~~~~~~~~~~~~~~DETAIL~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .bodyDet .productMain {
@@ -202,6 +238,10 @@ body{
   background-color: var(--secundario);
   border-radius: 2%;
 }
+.bodyDet footer {
+  position: relative;
+  bottom: 0px;
+}
 
 /*~~~~~~~~~~~~~~~~~~~~CARRITO~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .bodyCart .cartMain {
@@ -213,6 +253,10 @@ body{
   display: flex;
   justify-content: space-between;
   border-radius: 3%;
+}
+.bodyCart footer {
+  position: fixed;
+  bottom: 0px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~GENERALES~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -240,8 +284,6 @@ body{
 .bodyGen footer {
   background-color: var(--principal);
   padding: 3%;
-  position: relative;
-  bottom: 0px;
 }
 .bodyGen footer .footIzq ul {
   list-style: none;
@@ -250,22 +292,30 @@ body{
   text-decoration: none;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.register form {
+/*~~~~~~~~~~~~~~~~~~~~~REGISTER~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.register .fRegister {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--secundario);
+  margin: 10% 5%;
+  padding: 5%;
+  border-radius: 3%;
 }
-.register form .subContainer {
+.register .fRegister .subContainer {
   display: flex;
   flex-direction: row;
   gap: 20px;
   margin-bottom: 15px;
 }
-.register form .subContainer .subSubContainer {
+.register .fRegister .subContainer .subSubContainer {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.register footer {
+  position: fixed;
+  bottom: 0px;
 }
 
 /*# sourceMappingURL=stylew.css.map */

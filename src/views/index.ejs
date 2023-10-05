@@ -10,19 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 <body class="bodyPrin bodyGen">
-    <header class="headerGen">
-        <a href="index.html"><img class="logo" src="imagenes/logo.png" alt="Logo de la empresa"></a>
-            <img class="nombre" src="imagenes/nombre.png" alt="Alpa gourmet">
-        <nav class="navPrincipal">
-            <ul>
-                <li><a href="">Categorias</a></li>
-                <li><a href="">Sobre nosotros</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Recetas</a></li>
-            </ul>
-        </nav>
-
-    </header>
+    <header class="headerGen"> <%- include("./partials/header.ejs") %> </header>
 
     <main class="mainPrincipal">
         <div class="quienesSomos">
@@ -41,7 +29,7 @@
             <div class="cat1 tarjeta">
                 <h2>Utensillos:</h2>
                 <div class="interior">
-                    <img src="imagenes/utensilloss.jpg" alt="Muestra de utensillos">
+                    <img src="imagenes/utensillos/utensilloss.jpg" alt="Muestra de utensillos">
                     <p>Cucharas, cucharones, tenedores, cuchillos, cubiertos de postre, cubiertos de reposteria, cuchillos para carne, ...</p>
                     <h3>Ver mas:</h3>
                 </div>
@@ -49,7 +37,7 @@
             <div class="cat2 tarjeta">
                 <h2>Ollas y sartenes:</h2>
                 <div class="interior">
-                    <img src="imagenes/ollas.png" alt="Muestra de ollas">
+                    <img src="imagenes/ollas/ollas.png" alt="Muestra de ollas">
                     <p>Ollas, sartenes, planchas, evaporadora, freidora, ahumador, parrilla, ...</p>
                     <h3>Ver mas:</h3>
                 </div>
@@ -57,7 +45,7 @@
             <div class="cat3 tarjeta">
                 <h2>Tablas y recipientes:</h2>
                 <div class="interior">
-                    <img src="imagenes/tablas.jpg" alt="Muestra de tablas">
+                    <img src="imagenes/tablas/tablas.jpg" alt="Muestra de tablas">
                     <p>Tabla para cortar de madera, tabla de plastico, platos, recipientes, ...</p>
                     <h3>Ver mas:</h3>
                 </div>
@@ -65,7 +53,7 @@
             <div class="cat4 tarjeta">
                 <h2>Otros objetos:</h2>
                 <div class="interior">
-                    <img src="imagenes/otros.jpg" alt="Muestra de otros elementos de cocina">
+                    <img src="imagenes/otros/otros.jpg" alt="Muestra de otros elementos de cocina">
                     <p>Batidora manual, palo de amasar, manga de reposteria, espolvoreador, ...</p>
                     <h3>Ver mas:</h3>
                 </div>
@@ -76,20 +64,7 @@
 
 
     <footer>
-        <div class="footIzq">
-            <img class="gourmet" src="imagenes/logo.png" alt="Logo de la empresa">
-            <ul>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Email</a></li>
-                <li><a href="">GitHub</a></li>
-                <li><a href="">Linkedin</a></li>
-            </ul>
-        </div>
-
-        <div class="footDer">
-            <p>Copyright © y todos los derechos  de autor, 2023, reservados a AlpaDev Cordoba, Argentina 2023</p>
-            <img class="alpaimg" src="imagenes/alpa.png" alt="Logo de alpa dev">
-        </div>
+        <%- include("./partials/footer.ejs") %>
     </footer>
 
     

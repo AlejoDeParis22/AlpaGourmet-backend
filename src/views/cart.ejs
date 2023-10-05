@@ -7,18 +7,7 @@
     <link rel="stylesheet" href="/css/stylew.css">
 </head>
 <body class="bodyCart bodyGen">
-    <header class="headerGen">
-        <a href="index.html"><img class="logo" src="imagenes/logo.png" alt="Logo de la empresa"></a>
-        <img class="nombre" src="imagenes/nombre.png" alt="Alpa gourmet">
-    <nav class="navPrincipal">
-        <ul>
-            <li><a href="">Categorias</a></li>
-            <li><a href="">Sobre nosotros</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">Recetas</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="headerGen"> <%- include("./partials/header.ejs") %> </header>
 
 
 <main class="cartMain">
@@ -27,25 +16,25 @@
 
         <div class="añadidos">
             <div class="tarjetas">
-                <img src="imagenes/cuchillo.jpg" alt="Imagen de muestra de cuchillo">
+                <img src="imagenes/utensillos/cuchillo.jpg" alt="Imagen de muestra de cuchillo">
                 <h3>Cuchillo santoku</h3>
                 <a class="eliminar"><img src="imagenes/delete.svg" alt="boton para eliminar producto"></a>
                 <h4>$5000</h4>
             </div>
             <div class="tarjetas">
-                <img src="imagenes/utensilloss.jpg" alt="Imagen de muestra de utensillos">
+                <img src="imagenes/utensillos/cucharon.jpg" alt="Imagen de muestra de utensillos">
                 <h3>Cucharon</h3>
                 <a class="eliminar"><img src="imagenes/delete.svg" alt="boton para eliminar producto"></a>
                 <h4>$1000</h4>
             </div>
             <div class="tarjetas">
-                <img src="imagenes/ollas.png" alt="Imagen de muestra de ollas">
+                <img src="imagenes/ollas/ollateflon.jpg" alt="Imagen de muestra de ollas">
                 <h3>Olla essen</h3>
                 <a class="eliminar"><img src="imagenes/delete.svg" alt="boton para eliminar producto"></a>
                 <h4>$19000</h4>
             </div>
             <div class="tarjetas">
-                <img src="imagenes/otros.jpg" alt="Imagen de muestra de cuchillo">
+                <img src="imagenes/otros/rallador.jpg" alt="Imagen de muestra de cuchillo">
                 <h3>Rallador </h3>
                 <a class="eliminar"><img src="imagenes/delete.svg" alt="boton para eliminar producto"></a>
                 <h4>$3000</h4>
@@ -63,20 +52,7 @@
 
 
 <footer>
-    <div class="footIzq">
-        <img class="gourmet" src="imagenes/logo.png" alt="Logo de la empresa">
-        <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Email</a></li>
-            <li><a href="">GitHub</a></li>
-            <li><a href="">Linkedin</a></li>
-        </ul>
-    </div>
-
-    <div class="footDer">
-        <p>Copyright © y todos los derechos  de autor, 2023, reservados a AlpaDev Cordoba, Argentina 2023</p>
-        <img class="alpaimg" src="imagenes/alpa.png" alt="Logo de alpa dev">
-    </div>
+    <%- include("./partials/footer.ejs") %>
 </footer>
 
 

@@ -1,0 +1,177 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cuchillo santoku",
+        "imagen":"imagenes/utensillos/cuchillo.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "utensillos"
+    },
+    {
+        "id": 2,
+        "nombre": "Batidora manual",
+        "imagen":"imagenes/utensillos/batidora.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "utensillos"
+    },
+    {
+        "id": 3,
+        "nombre": "Cucharon punta de silicona",
+        "imagen":"imagenes/utensillos/cucharon.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "utensillos"
+    },
+    {
+        "id": 4,
+        "nombre": "Espatula hamburguesas",
+        "imagen":"imagenes/utensillos/espatula.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "utensillos"
+    },
+    {
+        "id": 5,
+        "nombre": "Hachuela",
+        "imagen":"imagenes/utensillos/hachuela.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "utensillos"
+    },
+    {
+        "id": 6,
+        "nombre": "Hachuela",
+        "imagen":"imagenes/utensillos/hachuela.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "utensillos"
+    },
+    {
+        "id": 7,
+        "nombre": "Hachuela cuadrada",
+        "imagen":"imagenes/utensillos/hachuelaC.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "utensillos"
+    },
+
+    {
+        "id": 8,
+        "nombre": "Olla de teflon",
+        "imagen":"imagenes/ollas/ollateflon.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "ollas"
+    },
+    {
+        "id": 9,
+        "nombre": "Olla roja teflon",
+        "imagen":"imagenes/ollas/ollaroja.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "ollas"
+    },
+    {
+        "id": 10,
+        "nombre": "Juego ollas y sarten",
+        "imagen":"imagenes/ollas/juegoollas.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "ollas"
+    },
+
+    {
+        "id": 11,
+        "nombre": "Tabla con mango",
+        "imagen":"imagenes/tablas/tablamango.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "tablas"
+    },
+    {
+        "id": 12,
+        "nombre": "Tabla rustica",
+        "imagen":"imagenes/tablas/tablarustica.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "tablas"
+    },
+    {
+        "id": 13,
+        "nombre": "Tabla estilo resina",
+        "imagen":"imagenes/tablas/tablaresina.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "tablas"
+    },
+    {
+        "id": 14,
+        "nombre": "Tabla tamaño XL",
+        "imagen":"imagenes/tablas/tablaxl.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "tablas"
+    },
+
+    {
+        "id": 15,
+        "nombre": "Afilador de cuchillos ",
+        "imagen":"imagenes/tablas/afiladorcuchillo.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "otros"
+    },
+    {
+        "id": 16,
+        "nombre": "Barra afila cuchillos ",
+        "imagen":"imagenes/tablas/barraafiladora.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "otros"
+    },
+    {
+        "id": 17,
+        "nombre": "Molde hamburguesas ",
+        "imagen":"imagenes/tablas/hamburguesera.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "otros"
+    },
+    {
+        "id": 18,
+        "nombre": "Rallador de queso ",
+        "imagen":"imagenes/tablas/rallador.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "otros"
+    },
+    {
+        "id": 19,
+        "nombre": "Soporte imantado ",
+        "imagen":"imagenes/tablas/soporteiman.jpg",
+        "descripcion": "Descripcion completa",
+        "resumen": "Breve",
+        "precio": 5000,
+        "categoria": "otros"
+    }
+
+]
