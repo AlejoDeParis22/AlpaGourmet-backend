@@ -1,9 +1,1 @@
-[
-    {
-        "id": "1",
-        "name": "Alejo De Paris",
-        "username": "Alejo",
-        "email": "alejodeparis@gmail.com",
-        "password": "hola"
-    }
-]
+[{"id":"1","name":"Alejo De Paris","username":"Alejo","email":"alejodeparis@gmail.com","password":"hola"},{}]

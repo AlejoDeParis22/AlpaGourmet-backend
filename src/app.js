@@ -7,7 +7,11 @@ const bodyParser = require("body-parser")
 const cookieParser = require("cookie-parser")
 const sessions = require("express-sessions")
 const unDia = 1000*60*60*24
-
+const register = require("./routes/register");
+const indexRouter = require("./routes/index");
+const cart = require("./routes/cart");
+const login = require("./routes/login");
+const product = require("./routes/product");
 
 const PORT=3000
 
@@ -23,20 +27,12 @@ app.use (bodyParser.urlencoded({extended:true}));
 
 
 //RUTAS
-const indexRouter = require("./routes/index");
+
 app.use("/", indexRouter);
-
-const cart = require("./routes/cart");
 app.use("/", cart);
-
-const login = require("./routes/login");
 app.use("/", login);
-
-const product = require("./routes/product");
 app.use("/", product);
-
-const register = require("./routes/register");
-app.use("/", register);
+app.use("/register", register);
 
 
 

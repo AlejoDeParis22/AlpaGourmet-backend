@@ -2,39 +2,17 @@ var express = require("express");
 var router = express.Router();
 const fs = require("fs");
 
-router.get("/register",(req,res)=>{
+router.get("/",(req,res)=>{
     res.render("../views/register");
 });
 
+router.post("/", (req, res)=>{
+    const users = JSON.parse(fs.readFileSync("./userData.json", "utf-8"));
+    const newUser = {nombre: req.body.usuario, email: req.body.email, password: req.body.contrasena};
+    users.push(newUser);
 
-//const read = () =>
-    JSON.parse(fs.readFileSync("../src/userData.json", "utf8"));
-/* const writeJson = (data)=>{
-    let stringifiedData = JSON.stringify(data,null,2);
-    return fs.writeFileSync("../src/userData.json",JSON.stringify, stringifiedData);
-};
- */
-router.post("/register", (req,res)=>{
-    const oldJson= JSON.parse(fs.readFileSync("../src/userData.json", "utf8"));
-    const newUser= {id: oldJson.lenght + 1,
-        name:req.body.nombre,
-        username: req.body.usuario,
-        email:req.body.email,
-        password: req.body.contrasena}
-    oldJson.push(newUser);
-    let stringifiedData = JSON.stringify(oldJson,null,2);
-    return fs.writeFileSync("../src/userData.json",JSON.stringify, stringifiedData);
-
+    fs.writeFileSync("./userData.json", JSON.stringify(users));
+    res.send('Usuario creado');
 });
-/*     console.log(read());
-    const oldJson= read();
-    const newUser= {id: oldJson.lenght + 1,
-        name:req.body.nombre,
-        username: req.body.usuario,
-        email:req.body.email,
-        password: req.body.contrasena}
-    oldJson.push(newUser);
-    console.log(oldJson)
-    writeJson(req.body); */
 
 module.exports = router;
